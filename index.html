@@ -9,7 +9,7 @@
 <script>
     // Инициализация EmailJS
     (function(){
-        emailjs.init("jRMQur_09g9TAL84q"); // Замените YOUR_USER_ID на ваш ID из EmailJS
+        emailjs.init("jRMQur_09g9TAL84q");
     })();
 
     function sendSelectedItems() {
@@ -25,7 +25,6 @@
 
         // Настраиваем параметры для отправки на EmailJS
         const emailParams = {
-            to_name: "Юрій", // Замените на нужное имя получателя
             message: selectedItems.join(", ")
         };
 
@@ -118,70 +117,20 @@
                 <h2 id="filling">- Заповнення ТЗ -</h2>
             </div>
             <form id="checkboxForm">
-                <table>
-                    <p>Task 1</p>
+                <table class="table1">
+                    <p>Тип нерухомості:</p>
                     <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 1"> Элемент 1</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 2"> Элемент 2</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 3"> Элемент 3</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 4"> Элемент 4</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 5"> Элемент 5</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 6"> Элемент 6</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 7"> Элемент 7</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 8"> Элемент 8</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 9"> Элемент 9</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 10"> Элемент 10</td>
+                        <td><input type="checkbox" name="items" value="Тип нерухомсті: Квартира"> Квартира</td>
                     </tr>
                 </table>
-                <table>
-                    <p>Task 2</p>
+                <table class="table2">
                     <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 11"> Элемент 11</td>
+                        <td><input type="checkbox" name="items" value="Тип нерухомсті: Частний будинок"> Частний будинок</td>
                     </tr>
+                </table>
+                <table class="table1">
                     <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 12"> Элемент 12</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 13"> Элемент 13</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 14"> Элемент 14</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 15"> Элемент 15</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 16"> Элемент 16</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 17"> Элемент 17</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 18"> Элемент 18</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 19"> Элемент 19</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="items" value="Элемент 20"> Элемент 20</td>
+                        <td><input type="checkbox" name="items" value="Тип нерухомсті: Дача"> Дача</td>
                     </tr>
                 </table>
                 <button type="button" onclick="sendSelectedItems()">Надіслати</button>
