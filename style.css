@@ -217,7 +217,7 @@ header{
 }
 .tech-task-content{
     width: 100%;
-    height: 1200px;
+    height: 2000px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -278,7 +278,7 @@ form button:hover{
     color: white;
     transition: 500ms;
 }
-#userNotes {
+.div-write-notes textarea {
     width: 300px;      /* Задайте ширину */
     height: 100px;     /* Задайте высоту */
     resize: none;      /* Запрещает изменение размера */
@@ -297,4 +297,14 @@ form button:hover{
 .div-write-notes textarea{
     position: relative;
     left: 10px;
+}
+.catalog-img{
+    width: 300px;
+    height: 250px;
+    background-color: #363531;
+}
+.divForCatalogImages{
+    width: 100%;
+    height: 250px;
+    background-color: #e8e8e8;
 }
