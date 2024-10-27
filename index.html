@@ -20,6 +20,7 @@
 
             const userEmail = form.elements["userEmail"].value;
             const userAddress = form.elements["userAddress"].value;
+            const userPhone = form.elements["userPhone"].value;
             const userNotes = form.elements["userNotes"].value;
             const ventilationNotes = form.elements["ventilationNotesNotes"].value;
 
@@ -38,6 +39,7 @@
                 message: selectedItems.join("¦¦¦ "),
                 user_email: userEmail,
                 user_address: userAddress,
+                user_phone: userPhone,
                 user_notes: userNotes,
                 ventilation_notes: ventilationNotes
             };
@@ -238,9 +240,6 @@
                         <td><input type="checkbox" name="items" value="1.6 Документація як надається разом с Технічним завданням: Архітектурні креслення">  Витяжні вентилятори Maico ER (Німеччина)<br> <i>Вентилятори преміум сегменту, тихі, надійні. Якщо санвузол більше 4 м2 може знадобитись 2 і більше <br>вентиляторів. <br>Можуть монтуватися в фальш-стелю або стіну. <br>Монтажна висота 120 мм (тобто необхідно 120мм <br>вільного простору за стелею).</i></td>
                     </tr>
                 </table>
-                <div class="divForCatalogImages">
-                    <img class="catalog-img" src="" alt="">
-                </div>
                 <button type="button" onclick="sendSelectedItems()">Надіслати</button>
             </form>
         </div>
